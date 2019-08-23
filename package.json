@@ -4,8 +4,23 @@
   "description": "Students:- See, Teachers:- Update",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "author": "4 chutiyos",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "mysql": "^2.17.1",
+    "sequelize": "^5.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhyansuryan0410/project_sem5.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/adhyansuryan0410/project_sem5/issues"
+  },
+  "homepage": "https://github.com/adhyansuryan0410/project_sem5#readme"
 }
