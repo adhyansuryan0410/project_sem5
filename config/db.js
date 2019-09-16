@@ -1,18 +1,17 @@
-const Sequelize = require('sequelize')
+var mysql = require('mysql');
 
-var db_config = {
+var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '',
-  port: 3306,
+  password: 'Adhy@n0410',
   database: 'attendance'
-};
+});
 
-var sequelize = new Sequelize('mysql://'+db_config.user+':'+db_config.password+'@'+db_config.host
-+':'+db_config.port+'/'+db_config.database+'');
+connection.connect((err)=>{
+  if(err) return console.log(err.stack);
+  console.log("Connection established successfully");
+});
 
-sequelize.authenticate().then(()=>{
-  console.log('database '+db_config.database+' connected');
-}).catch((err)=>{
-  console.log('error connecting to database: '+err);  
-})
+connection.end(()=>{
+  console.log("Connection successfully closed");
+});
