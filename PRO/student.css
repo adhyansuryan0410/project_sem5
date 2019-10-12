@@ -1,0 +1,54 @@
+.new {
+	height: 100%;
+	width: 100%;
+	background-color: teal;
+}
+    
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+ display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+}
+
+.button1 {
+	padding: 16px 32px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  left: 25%;
+  align-content: center;
+ position: absolute;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+	padding: 16px 32px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  right: 30%;
+  align-content: center;
+  position: absolute;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+

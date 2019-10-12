@@ -2,13 +2,9 @@
 <html>
 <head>
 	<title>Login Page</title>
-  <!--Bootsrap 4 CDN-->
+	<script src="config/connect_db.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    
-    <!--Fontawesome CDN-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-
-	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="contents/css/styles.css">
 </head>
 <body>
@@ -29,20 +25,21 @@
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="username">
+						<input type="text" id="login_id" class="form-control" placeholder="username">
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password">
+						<input type="password" id="pwd" class="form-control" placeholder="password">
 					</div>
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
 					</div>
-					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn">
+					<div class="form-group">					
+						<input type="submit" id="btnlogin" value="Login" class="btn float-right login_btn">
+						<script src="config/login.js"></script>
 					</div>
 				</form>
 			</div>
