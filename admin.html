@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Window</title>
+  <script src="config/admin/sem5conn.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+<body>
+  <p text-align="center">Admin</p>
+  <div class="col-sm-6 float-left">
+  <p>Teacher</p>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="t_name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" id="t_email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="t_pwd">
+    </div>
+    <button type="submit" class="btn btn-default" id="t_submit">Submit</button>
+        
+  </form>
+  </div>
+  <p>Student</p>
+  <div class="col-sm-6 float-right" >
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="s_name">
+    </div>
+    <div class="form-group">
+      <label for="registration_id">Reg_ID:</label>
+      <input type="text" class="form-control" id="s_regid">
+    </div>
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" id="s_email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="s_pwd">
+    </div>
+    <button type="submit" class="btn btn-default" id="s_submit">Submit</button>
+    <script src="config/admin/t_submit.js"></script>
+  </form>
+  </div>
+  <a href="index.html" class="btn btn-default">Go to Login Page</a>
+</body>
+</html>
