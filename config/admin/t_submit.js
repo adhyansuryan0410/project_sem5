@@ -30,8 +30,7 @@ T_Submit_Btn.addEventListener('click', function(){
 
 //storing student info
 S_Submit_Btn.addEventListener('click', function(){
-  query = "insert into STUDENT(name, email, password, reg_id)values('"+s_name.value+"','"+s_email.value+"','"
-  +s_pwd.value+"','"+s_regid.value+"');";
+  query = "insert into STUDENT(name, reg_id)values('"+s_name.value+"','"+s_regid.value+"');";
   conn.query(query, function(err, result){
     if(err){
       alert('Error');
